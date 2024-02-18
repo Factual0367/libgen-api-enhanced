@@ -11,8 +11,6 @@ Search Library Genesis programmatically using an enhanced Python library. This f
   - [Filtered Author Searching](#filtered-author-searching)
   - [Non-exact Filtered Searching](#non-exact-filtered-searching)
   - [Filter Fields](#filter-fields)
-- [Further Information](#further-information)
-- [Testing](#testing)
 - [Contributors](#contributors)
 
 ## Getting Started
@@ -158,15 +156,6 @@ Results are returned as a list of dictionaries:
   }
 ]
 ```
-
-## Further information
-
-- If there are no results, the library will return an empty array.
-- All fields are strings.
-- If a value is not present, the field will contain an empty string.
-- Some listings will have page count listed in the form of "count[secondary-count]" as this is how they appear on Library Genesis.
-- Only the first page of results (max. 25) will be returned.
-
 
 ## Contributors
 
