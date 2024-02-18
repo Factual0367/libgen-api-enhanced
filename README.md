@@ -1,4 +1,6 @@
-Search Library Genesis programmatically using an enhanced Python library. This fork extends the original `libgen-api` by [Harrison Broadbent](https://github.com/harrison-broadbent) with added features like direct download links and book cover links.
+<h1>LibgenAPI Enhanced</h1>
+
+Search Library Genesis programmatically using an enhanced Python library. This fork extends the original `libgen-api` by [Harrison Broadbent](https://github.com/harrison-broadbent/libgen-api) with added features like direct download links and book cover links. It also returns 100 results by default, instead of 25.
 
 ## Contents
 
@@ -9,17 +11,9 @@ Search Library Genesis programmatically using an enhanced Python library. This f
   - [Filtered Author Searching](#filtered-author-searching)
   - [Non-exact Filtered Searching](#non-exact-filtered-searching)
   - [Filter Fields](#filter-fields)
-- [Resolving mirror links](#resolving-mirror-links)
-- [More Examples](#more-examples)
 - [Further Information](#further-information)
 - [Testing](#testing)
 - [Contributors](#contributors)
-
----
-
-Please ⭐ if you find this useful!
-
----
 
 ## Getting Started
 
@@ -43,9 +37,6 @@ print(results)
 Check out the [results layout](#results-layout) to see how the results data is formatted.
 
 ## Basic Searching:
-
-**_NOTE_**: All queries must be at least 3 characters long. This is to avoid any errors on the LibGen end (different mirrors have different requirements, but a minimum of 3 characters is the official limit).
-
 Search by title or author:
 
 ### Title:
@@ -142,10 +133,6 @@ col_names = [
     ]
 ```
 
-## More Examples
-
-See the [testing file](test/manualtesting.py) for more examples.
-
 ## Results Layout
 
 Results are returned as a list of dictionaries:
@@ -180,24 +167,6 @@ Results are returned as a list of dictionaries:
 - Some listings will have page count listed in the form of "count[secondary-count]" as this is how they appear on Library Genesis.
 - Only the first page of results (max. 25) will be returned.
 
-## Testing
-
-libgen-api-enhanced uses Pytest to run unit tests.
-
-To run the tests -
-
-- ## Clone this repo -
-  ```
-  git clone https://github.com/onurhanak/libgen-api-enhanced.git && cd libgen-api-enhanced
-  ```
-- ## Install dependencies with -
-  ```
-  pip install .
-  ```
-- ## Run tests with -
-  ```
-  pytest
-  ```
 
 ## Contributors
 
@@ -210,12 +179,3 @@ Thanks to the following contributors -
 - [harrison-broadbent](https://github.com/harrison-broadbent)
 - [calmoo](https://github.com/calmoo)
 - [HENRYMARTIN5](https://github.com/HENRYMARTIN5)
-
-## New Distribution
-
-(for my own reference)
-
-1. python3 -m pip install --user --upgrade setuptools wheel
-2. python3 -m pip install --user --upgrade twine
-3. python3 setup.py sdist bdist_wheel
-4. python3 -m twine upload dist/\*
