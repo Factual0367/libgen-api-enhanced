@@ -1,6 +1,4 @@
-Search Library Genesis programmatically using a simple Python library.
-
-Allows you to search Library Genesis by title or author, filter results with direct download and book cover links.
+Search Library Genesis programmatically using an enhanced Python library. This fork extends the original `libgen-api` by [Harrison Broadbent](https://github.com/harrison-broadbent) with added features like direct download links and book cover links.
 
 ## Contents
 
