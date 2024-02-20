@@ -87,7 +87,7 @@ class SearchRequest:
 
     def aggregate_request_data(self):
         search_page = self.get_search_page()
-        soup = BeautifulSoup(search_page.text, "lxml")
+        soup = BeautifulSoup(search_page.text, "html.parser")
         self.strip_i_tag_from_soup(soup)
 
         # Libgen results contain 3 tables
