@@ -138,28 +138,26 @@ Results are returned as a list of dictionaries:
 ```json
 [
   {
+    "ID": "123456",
     "Author": "John Smith",
-    "Edit": "http://example.com",
-    "Extension": "epub",
-    "ID": "00000",
+    "Title": "Title",
+    "Publisher": "Publisher",
+    "Year": "2021"
+    "Pages": "410",
     "Language": "German",
+    "Size": "1005 Kb",
+    "Extension": "epub",
     "Mirror_1": "http://example.com",
     "Mirror_2": "http://example.com",
     "Mirror_3": "http://example.com",
     "Mirror_4": "http://example.com",
     "Mirror_5": "http://example.com",
-    "Pages": "410",
-    "Publisher": "Publisher",
-    "Size": "1005 Kb",
-    "Title": "Title",
-    "Year": "2021"
-  }
-]
+    "Direct_Download_Link": "http://example.com",
+    "Cover": "https://covers.openlibrary.org/b/olid/OL1234-M.jpg"
+  }]
 ```
 
 ## Contributors
-
-A massive thank you to those that have contributed to this project!
 
 Please don't hesitate to raise an issue, or fork this project and improve on it.
 
