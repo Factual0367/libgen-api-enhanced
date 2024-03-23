@@ -61,8 +61,6 @@ print(results)
 
 ## Filtered Searching
 
-Skip to the [Examples](#filtered-title-searching)
-
 - You can define a set of filters, and then use them to filter the search results that get returned.
 - By default, filtering will remove results that do not match the filters exactly (case-sensitive) -
   - This can be adjusted by setting `exact_match=False` when calling one of the filter methods, which allows for case-insensitive and substring filtering.
