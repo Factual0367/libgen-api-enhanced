@@ -32,7 +32,7 @@ results = s.search_title("Pride and Prejudice")
 print(results)
 ```
 
-Check out the [results layout](#results-layout) to see how the results data is formatted.
+Check out the [results layout](#results-layout) to see available fields and how the results data is formatted.
 
 ## Basic Searching:
 Search by title or author:
@@ -105,30 +105,6 @@ partial_filters = {"Year": "200"}
 titles = ne_af.search_author_filtered("Agatha Christie", partial_filters, exact_match=False)
 print(titles)
 
-```
-
-### Filter Fields
-
-You can filter against any of the Library Genesis column names, which are given as -
-
-```python
-col_names = [
-        "ID",
-        "Author",
-        "Title",
-        "Publisher",
-        "Year",
-        "Pages",
-        "Language",
-        "Size",
-        "Extension",
-        "Mirror_1",
-        "Mirror_2",
-        "Mirror_3",
-        "Mirror_4",
-        "Mirror_5",
-        "Edit",
-    ]
 ```
 
 ## Results Layout
