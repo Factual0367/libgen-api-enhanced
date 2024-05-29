@@ -135,8 +135,8 @@ Results are returned as a list of dictionaries:
 
 Please don't hesitate to raise an issue, or fork this project and improve on it.
 
-Thanks to the following contributors -
+Thanks to the following people:
 
-- [harrison-broadbent](https://github.com/harrison-broadbent)
+- [harrison-broadbent](https://github.com/harrison-broadbent) who wrote the original Libgen API.
 - [calmoo](https://github.com/calmoo)
 - [HENRYMARTIN5](https://github.com/HENRYMARTIN5)
