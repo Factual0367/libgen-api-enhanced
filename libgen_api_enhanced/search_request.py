@@ -54,6 +54,10 @@ class SearchRequest:
             search_url = (
                 f"https://libgen.is/search.php?req={query_parsed}&column=author&res=100"
             )
+        elif self.search_type.lower() == "default":
+            search_url = (
+                f"https://libgen.is/search.php?req={query_parsed}&column=default&res=100"
+            )
         search_page = requests.get(search_url)
         return search_page
 

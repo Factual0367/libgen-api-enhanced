@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: libgen_api_enhanced
-Version: 1.0.2
+Version: 1.0.3
 Summary: Search Library genesis by Title or Author
 Home-page: https://github.com/onurhanak/libgen-api-enhanced
 Author: Onurhan Ak
@@ -50,7 +50,7 @@ results = s.search_title("Pride and Prejudice")
 print(results)
 ```
 
-Check out the [results layout](#results-layout) to see how the results data is formatted.
+Check out the [results layout](#results-layout) to see available fields and how the results data is formatted.
 
 ## Basic Searching:
 Search by title or author:
@@ -78,8 +78,6 @@ print(results)
 ```
 
 ## Filtered Searching
-
-Skip to the [Examples](#filtered-title-searching)
 
 - You can define a set of filters, and then use them to filter the search results that get returned.
 - By default, filtering will remove results that do not match the filters exactly (case-sensitive) -
@@ -125,30 +123,6 @@ print(titles)
 
 ```
 
-### Filter Fields
-
-You can filter against any of the Library Genesis column names, which are given as -
-
-```python
-col_names = [
-        "ID",
-        "Author",
-        "Title",
-        "Publisher",
-        "Year",
-        "Pages",
-        "Language",
-        "Size",
-        "Extension",
-        "Mirror_1",
-        "Mirror_2",
-        "Mirror_3",
-        "Mirror_4",
-        "Mirror_5",
-        "Edit",
-    ]
-```
-
 ## Results Layout
 
 Results are returned as a list of dictionaries:
@@ -156,33 +130,31 @@ Results are returned as a list of dictionaries:
 ```json
 [
   {
+    "ID": "123456",
     "Author": "John Smith",
-    "Edit": "http://example.com",
-    "Extension": "epub",
-    "ID": "00000",
+    "Title": "Title",
+    "Publisher": "Publisher",
+    "Year": "2021"
+    "Pages": "410",
     "Language": "German",
+    "Size": "1005 Kb",
+    "Extension": "epub",
     "Mirror_1": "http://example.com",
     "Mirror_2": "http://example.com",
     "Mirror_3": "http://example.com",
     "Mirror_4": "http://example.com",
     "Mirror_5": "http://example.com",
-    "Pages": "410",
-    "Publisher": "Publisher",
-    "Size": "1005 Kb",
-    "Title": "Title",
-    "Year": "2021"
-  }
-]
+    "Direct_Download_Link": "http://example.com",
+    "Cover": "https://covers.openlibrary.org/b/olid/OL1234-M.jpg"
+  }]
 ```
 
 ## Contributors
 
-A massive thank you to those that have contributed to this project!
-
 Please don't hesitate to raise an issue, or fork this project and improve on it.
 
-Thanks to the following contributors -
+Thanks to the following people:
 
-- [harrison-broadbent](https://github.com/harrison-broadbent)
+- [harrison-broadbent](https://github.com/harrison-broadbent) who wrote the original Libgen API.
 - [calmoo](https://github.com/calmoo)
 - [HENRYMARTIN5](https://github.com/HENRYMARTIN5)
