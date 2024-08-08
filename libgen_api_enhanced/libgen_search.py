@@ -10,6 +10,14 @@ class LibgenSearch:
         search_request = SearchRequest(query, search_type="default")
         return search_request.aggregate_request_data()
     
+    def search_default_filtered(self, query, filters, exact_match=False):
+        search_request = SearchRequest(query, search_type="default")
+        results = search_request.aggregate_request_data()
+        filtered_results = filter_results(
+            results=results, filters=filters, exact_match=exact_match
+        )
+        return filtered_results
+    
     def search_title(self, query):
         search_request = SearchRequest(query, search_type="title")
         return search_request.aggregate_request_data()
