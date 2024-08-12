@@ -21,18 +21,6 @@ Install the package -
 pip install libgen-api-enhanced
 ```
 
-Perform a basic search -
-
-```python
-# search_title()
-
-from libgen_api_enhanced import LibgenSearch
-s = LibgenSearch()
-results = s.search_title("Pride and Prejudice")
-print(results)
-```
-
-Check out the [results layout](#results-layout) to see available fields and how the results data is formatted.
 
 ## Basic Searching:
 Use the default search or search by title or author:
@@ -40,7 +28,7 @@ Use the default search or search by title or author:
 ### Default:
 
 ```python
-# search_title()
+# search_default()
 
 from libgen_api_enhanced import LibgenSearch
 s = LibgenSearch()
@@ -69,6 +57,8 @@ s = LibgenSearch()
 results = s.search_author("Jane Austen")
 print(results)
 ```
+
+Check out the [results layout](#results-layout) to see available fields and how the results data is formatted.
 
 ## Filtered Searching
 
