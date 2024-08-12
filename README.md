@@ -35,7 +35,18 @@ print(results)
 Check out the [results layout](#results-layout) to see available fields and how the results data is formatted.
 
 ## Basic Searching:
-Search by title or author:
+Use the default search or search by title or author:
+
+### Default:
+
+```python
+# search_title()
+
+from libgen_api_enhanced import LibgenSearch
+s = LibgenSearch()
+results = s.search_default("Pride and Prejudice")
+print(results)
+```
 
 ### Title:
 
