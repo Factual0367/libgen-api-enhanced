@@ -1,6 +1,6 @@
-Metadata-Version: 2.1
+Metadata-Version: 2.2
 Name: libgen_api_enhanced
-Version: 1.0.3
+Version: 1.0.5
 Summary: Search Library genesis by Title or Author
 Home-page: https://github.com/onurhanak/libgen-api-enhanced
 Author: Onurhan Ak
@@ -15,6 +15,15 @@ Description-Content-Type: text/markdown
 License-File: LICENSE
 Requires-Dist: bs4
 Requires-Dist: requests
+Dynamic: author
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: summary
 
 <h1>LibgenAPI Enhanced</h1>
 
@@ -39,21 +48,20 @@ Install the package -
 pip install libgen-api-enhanced
 ```
 
-Perform a basic search -
+
+## Basic Searching:
+Use the default search or search by title or author:
+
+### Default:
 
 ```python
-# search_title()
+# search_default()
 
 from libgen_api_enhanced import LibgenSearch
 s = LibgenSearch()
-results = s.search_title("Pride and Prejudice")
+results = s.search_default("Pride and Prejudice")
 print(results)
 ```
-
-Check out the [results layout](#results-layout) to see available fields and how the results data is formatted.
-
-## Basic Searching:
-Search by title or author:
 
 ### Title:
 
@@ -76,6 +84,8 @@ s = LibgenSearch()
 results = s.search_author("Jane Austen")
 print(results)
 ```
+
+Check out the [results layout](#results-layout) to see available fields and how the results data is formatted.
 
 ## Filtered Searching
 
